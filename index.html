@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      window.onload = function () {
+        var hiddenElements = document.querySelectorAll(".hidden");
+        for (var i = 0; i < hiddenElements.length; i++) {
+          hiddenElements[i].style.display = "block";
+        }
+      };
+    </script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Zeyada&display=swap");
+    </style>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"
+    />
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"
+    ></script>
+
+    <title>Fogón</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <wrapper id="hidden">
+      <header>
+        <div class="logo">
+          <h1>Fogón</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#hours">Horarios</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section id="menu">
+          <h2>Menú</h2>
+          <div id="menu-slider">
+            <div><img src="src/img1.jpg" /></div>
+            <div><img src="img2.jpg" /></div>
+            <div><img src="img3.jpg" /></div>
+            <div><img src="img4.jpg" /></div>
+          </div>
+          <ul>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#hours">Horarios</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </section>
+        <section id="menu">
+          <h2>Menú</h2>
+          <ul>
+            <li><span>Plato 1</span><span>$10</span></li>
+            <li><span>Plato 2</span><span>$12</span></li>
+            <li><span>Plato 3</span><span>$15</span></li>
+          </ul>
+        </section>
+        <section id="hours">
+          <h2>Horarios</h2>
+          <p>Lun-Vie: 12pm - 10pm</p>
+          <p>Sáb-Dom: 11am - 11pm</p>
+        </section>
+        <section id="contact">
+          <h2>Contacto</h2>
+          <P>Email: Fogonpyapda1@gmail.com</P>
+          <p>Teléfono:  957 94 11 14</p>
+          <p>Dirección: C. Peñas Rojas, 80, 14200 Peñarroya-Pueblonuevo, Córdoba</p>
+        </section>
+      </main>
+      <footer>
+        <p>&copy; 2023 Fogón</p>
+      </footer>
+    s</wrapper>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#menu-slider").slick({
+          dots: true,
+          autoplay: true,
+          autoplaySpeed: 5000,
+          arrows: false,
+        });
+      });
+    </script>
+  </body>
+</html>
